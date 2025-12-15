@@ -1,0 +1,19 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="OpcTunnelGUI.App"
+             xmlns:local="using:OpcTunnelGUI"
+             xmlns:converters="using:OpcTunnelGUI.Converters"
+             RequestedThemeVariant="Light">
+
+    <Application.Resources>
+        <converters:BoolToTextConverter x:Key="BoolToTextConverter"/>
+    </Application.Resources>
+
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+  
+    <Application.Styles>
+        <FluentTheme />
+    </Application.Styles>
+</Application>
